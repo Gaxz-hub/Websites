@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gaxz | Hot Wheels Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".4" stop-color="#fff" stop-opacity=".04"/><stop offset=".62" stop-color="#000" stop-opacity=".1"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fc4e8"/><stop offset=".45" stop-color="#1a2230"/><stop offset="1" stop-color="#05070b"/></linearGradient>
+<radialGradient id="rim" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#9aa3b5"/><stop offset="1" stop-color="#3b4150"/></radialGradient>
+<radialGradient id="tire" cx=".5" cy=".5" r=".5"><stop offset=".6" stop-color="#1b1c22"/><stop offset="1" stop-color="#050506"/></radialGradient>
+<symbol id="car" viewBox="0 0 240 80">
+<ellipse cx="120" cy="73" rx="112" ry="5" fill="#000" opacity=".55"/>
+<path id="bd" d="M6 55 C6 48 12 45 24 43 L54 39 C68 30 86 21 110 18 C132 16 154 18 170 25 L198 33 C216 37 233 41 235 50 L235 57 L6 57Z" fill="var(--c)"/>
+<path d="M6 55 C6 48 12 45 24 43 L54 39 C68 30 86 21 110 18 C132 16 154 18 170 25 L198 33 C216 37 233 41 235 50 L235 57 L6 57Z" fill="url(#sheen)"/>
+<path d="M97 34 L113 22 C125 20 141 20 151 23 L173 33Z" fill="url(#glass)"/>
+<path d="M104 27 L116 23 L122 23 L110 33 L100 33Z" fill="#fff" opacity=".22"/>
+<path d="M60 41 C90 37 150 37 196 40" stroke="#000" stroke-opacity=".35" stroke-width="1" fill="none"/>
+<path d="M116 34 L116 46" stroke="#000" stroke-opacity=".35" stroke-width="1"/>
+<path d="M40 44 C80 40 150 40 210 44" stroke="#fff" stroke-opacity=".35" stroke-width="1.2" fill="none"/>
+<path d="M218 41 L233 45 L232 49 L214 46Z" fill="#fff6c8"/><path d="M6 47 L14 45 L14 50 L6 51Z" fill="#ff2a1a"/>
+<path d="M30 56 H212 V60 H30Z" fill="#06070a" opacity=".8"/>
+<circle cx="62" cy="57" r="20" fill="#06070a"/><circle cx="182" cy="57" r="20" fill="#06070a"/>
+<g class="wheel"><circle cx="62" cy="57" r="16" fill="url(#tire)"/><circle cx="62" cy="57" r="11" fill="url(#rim)"/><path d="M51 57h22M62 46v22M54 49l16 16M70 49L54 65" stroke="#2c303b" stroke-width="2"/><circle cx="62" cy="57" r="3" fill="#2c303b"/></g>
+<g class="wheel"><circle cx="182" cy="57" r="16" fill="url(#tire)"/><circle cx="182" cy="57" r="11" fill="url(#rim)"/><path d="M171 57h22M182 46v22M174 49l16 16M190 49L174 65" stroke="#2c303b" stroke-width="2"/><circle cx="182" cy="57" r="3" fill="#2c303b"/></g>
+</symbol></defs></svg>
+
+<header>
+<a href="#home" class="brand">HOT WHEELS</a>
+<nav><a href="#home">Home</a><a href="#about">About us</a><a href="#products">Products</a><a href="#contact">Contact us</a></nav>
+<div class="ic">
+<input id="sb" type="search" placeholder="search cars..." aria-label="Search cars">
+<button class="ib" id="sbtn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+<button class="ib" id="cbtn" aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.5 11h10l2-8H7"/><circle cx="9" cy="19" r="1.2"/><circle cx="17" cy="19" r="1.2"/></svg><span id="cnt">0</span></button>
+<button class="ib" id="lbtn" aria-label="Login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+<button class="ib" id="th" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+</div>
+</header>
+
+<section class="hero" id="home" style="max-width:none;padding-left:1rem;padding-right:1rem">
+<h1>HOT<br>WHEELS</h1><span>WHERE LEGENDS ARE MADE</span>
+<p>Collect, customize and race the coolest die-cast cars. Tap the car on the road for a nitro boost!</p>
+<a href="#products" class="btn">Shop now</a>
+<div class="road"><div class="drive" id="drive" title="Tap for nitro"><div class="flame"></div><svg class="car" viewBox="0 0 240 80" style="--c:#ff3d1f"><use href="#car"/></svg></div></div>
+</section>
+
+<section class="about" id="about">
+<h2 class="heading rv">About <b>us</b></h2>
+<div class="row">
+<div class="stage rv"><svg class="car" viewBox="0 0 240 80" style="--c:#1475ff"><use href="#car"/></svg><h3>HOT WHEELS</h3></div>
+<div class="rv"><h3>MORE THAN JUST A TOY</h3>
+<p>In 1968, Hot Wheels die-casts were designed to revolutionize toy vehicles by looking cooler and performing better than the competition. Today, it is one of the best-selling toy brands in the world.</p>
+<div class="nums"><div><span data-n="1968">0</span><small>Born</small></div><div><span data-n="250">0</span><small>Numbered models</small></div></div>
+<a href="#contact" class="btn">Learn more</a></div>
+</div></section>
+
+<section id="products">
+<h2 class="heading rv">Our <b>products</b></h2>
+<div class="grid" id="grid"></div><p id="none">No cars found. Try another search.</p>
+</section>
+
+<section id="contact">
+<h2 class="heading rv">Contact <b>us</b></h2>
+<form class="ct rv" id="cf"><input required placeholder="Your name"><input required type="email" placeholder="Your email"><textarea required rows="4" placeholder="Your message"></textarea><button class="btn" type="submit">Send message</button></form>
+</section>
+<footer>Fan-made concept shop. Hot Wheels is a trademark of Mattel.</footer>
+
+<aside id="cart" aria-label="Shopping cart"><div style="display:flex;justify-content:space-between;align-items:center"><h3>YOUR CART</h3><button class="ib" id="cx" aria-label="Close cart">✕</button></div>
+<div id="items"></div><h3 id="tot">Total: Php 0</h3><button class="btn" id="chk" style="margin-top:.8rem">Checkout</button></aside>
+
+<dialog id="dlg"><form method="dialog" id="lf"><h3>LOGIN NOW</h3><input type="email" required placeholder="Your email"><input type="password" required placeholder="Your password"><button class="btn">Login</button></form></dialog>
+<div id="toast" role="status"></div>
+
+<script>
+const P=[{n:'67 Pontiac GTO',p:160,c:'#ff3d1f'},{n:'Twin Mill',p:200,c:'#ffb300'},{n:'Deora II',p:220,c:'#1475ff'},{n:'Bone Shaker',p:250,c:'#16c47f'},{n:'Rodger Dodger',p:350,c:'#b83cff'},{n:'Night Burner',p:180,c:'#ff4fa3'}];
+const cols=['#ff3d1f','#ffc400','#1475ff','#16c47f','#b83cff','#ff4fa3'];
+const $=s=>document.querySelector(s),svg=c=>`<svg class="car" viewBox="0 0 240 80" style="--c:${c}"><use href="#car"/></svg>`;
+const grid=$('#grid'),cart={};let tt;
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('show'),1800)}
+P.forEach((o,i)=>{const d=document.createElement('div');d.className='card rv';d.dataset.n=o.n.toLowerCase();
+d.innerHTML=svg(o.c)+`<h3>${o.n}</h3><div class="stars">★★★★☆</div><div class="price">Php ${o.p}</div><div class="sw">${cols.map(c=>`<button style="background:${c}" aria-label="Paint ${c}"></button>`).join('')}</div><button class="btn">Add to cart</button>`;
+d.querySelectorAll('.sw button').forEach(b=>b.onclick=()=>{o.c=b.style.background;d.querySelector('svg').style.setProperty('--c',o.c)});
+d.querySelector('.btn').onclick=()=>{const k=o.n+o.c;cart[k]=cart[k]||{...o,q:0};cart[k].q++;draw();const c=$('#cnt');c.classList.remove('bump');void c.offsetWidth;c.classList.add('bump');toast(o.n+' added to cart')};
+d.onmousemove=e=>{const r=d.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;d.style.transform=`perspective(700px) rotateY(${x*14}deg) rotateX(${-y*14}deg) translateY(-6px)`};
+d.onmouseleave=()=>d.style.transform='';grid.appendChild(d)});
+function draw(){const a=Object.entries(cart).filter(([,v])=>v.q>0);
+$('#cnt').textContent=a.reduce((s,[,v])=>s+v.q,0);
+$('#items').innerHTML=a.length?a.map(([k,v])=>`<div class="it">${svg(v.c)}<div>${v.n}<small>Php ${v.p} each</small></div><button data-k="${k}" data-d="-1">−</button>${v.q}<button data-k="${k}" data-d="1">+</button></div>`).join(''):'<p style="color:var(--mut)">Your cart is empty.</p>';
+$('#tot').textContent='Total: Php '+a.reduce((s,[,v])=>s+v.p*v.q,0)}
+$('#items').onclick=e=>{const b=e.target.closest('button');if(b){cart[b.dataset.k].q+=+b.dataset.d;draw()}};
+draw();
+$('#cbtn').onclick=()=>$('#cart').classList.add('open');$('#cx').onclick=()=>$('#cart').classList.remove('open');
+$('#chk').onclick=()=>{if(!+$('#cnt').textContent)return toast('Add a car first');Object.keys(cart).forEach(k=>delete cart[k]);draw();$('#cart').classList.remove('open');toast('Order placed! Thanks, racer')};
+$('#lbtn').onclick=()=>$('#dlg').showModal();
+$('#dlg').onclick=e=>{if(e.target.id==='dlg')e.target.close()};
+$('#lf').onsubmit=()=>toast('Logged in (demo)');
+$('#cf').onsubmit=e=>{e.preventDefault();e.target.reset();toast('Message sent!')};
+const sb=$('#sb');$('#sbtn').onclick=()=>{sb.classList.toggle('open');sb.classList.contains('open')&&sb.focus()};
+sb.oninput=()=>{const q=sb.value.toLowerCase();let n=0;grid.querySelectorAll('.card').forEach(c=>{const m=c.dataset.n.includes(q);c.style.display=m?'':'none';n+=m});$('#none').style.display=n?'none':'block'};
+const dr=$('#drive');dr.onclick=()=>{dr.classList.remove('zoom');void dr.offsetWidth;dr.classList.add('zoom')};
+dr.addEventListener('animationend',e=>{if(e.animationName==='zoom')dr.classList.remove('zoom')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');
+t.querySelectorAll('[data-n]').forEach(s=>{const n=+s.dataset.n,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1400,1);s.textContent=Math.round(n*(1-Math.pow(1-p,3)));p<1&&requestAnimationFrame(f)})(t0)});io.unobserve(t)}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+$('#th').onclick=()=>{const r=document.documentElement,light=r.dataset.theme?r.dataset.theme==='light':matchMedia('(prefers-color-scheme:light)').matches;r.dataset.theme=light?'dark':'light'};
+</script>
+</body>
+</html>
